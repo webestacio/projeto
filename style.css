@@ -1,0 +1,95 @@
+body {
+   background-image:url(fundo.jpg);
+   background-size: cover;
+   text-align: center;
+   padding-top: 10%;
+}
+
+input {
+   height: 20px;
+   width: 200px;
+   border-radius: 15px;
+   margin-top: 5px;
+}
+
+.ver_senha {
+   cursor: pointer;
+   user-select: none;
+   position: absolute;
+   transform: translateX(-25px);
+   margin-top: 5px;
+
+}
+
+.ver_senha_registro {
+   cursor: pointer;
+   user-select: none;
+   position: absolute;
+   margin-top: 160px;
+   margin-left: 70px;
+}
+
+button {
+   width: 120px;
+   height: 40px;
+   border-radius: 20px;
+   background-color: black;
+   color: white;
+   margin-top: 30px;
+}
+
+button:hover {
+   transform: scale(1.06);
+   transition: 0.2s;
+   cursor: pointer;
+   
+}
+
+.foto {
+   width: 120px;
+   margin-bottom: 40px;
+}
+
+.foto_registro{
+   width: 120px;
+   margin-top: -40px;
+   margin-left: -60px;
+   position: absolute;
+}
+
+a {
+   margin-top: -10px;
+   margin-left: -35px;
+   position: absolute;
+   color: white;
+}
+a.esqueci_senha {
+   margin-left: 77px;
+}
+
+.email_registro {
+   position: absolute;
+   margin-top: 110px;
+   margin-left: -110px;
+}
+
+.confirmar_email {
+   position: absolute;
+   margin-top: 135px;
+   margin-left: -110px;
+}
+
+.botao_registro {
+   margin-top: 200px;
+}
+
+.criar_senha {
+   position: absolute;
+   margin-top: 160px;
+   margin-left: -110px;
+}
+
+.login {
+   margin-top: 170px;
+   margin-left: -2px;
+}

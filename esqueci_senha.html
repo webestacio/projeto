@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container_recuperacao">
+        <form>
+            <img src="logo.png"  class="foto_recuperacao" onclick="inicio()"></img>
+
+            <div class="input-container">
+            <input type="email" class="email_recuperacao" id="email_recuperacao" placeholder="Email">
+            </div>
+            <p></p>
+            <button type="button" class="botao_recuperacao" onclick="recuperar()">enviar</button>
+            <div class="links">
+            <a href="login.html" class="inicio">Inicio</a>
+            </div>
+        </form>
+    </div>
     <script src="script.js"></script>
-
-    <br>
-    <img src="logo.png" id="inicio"     class="foto_esqueci_senha" onclick=inicio()></img>
-    <br>
-
-    <button type="button" class="botao_recuperacao" onclick="recuperar()">enviar</button>
-    <br>
-    <input type="email" class="email_recuperacao" id="email_recuperacao" placeholder="Email">
-    <br>
-    <a href="login.html" class="inicio">Inicio</a>
-    <br>
 </body>
 </html>

@@ -8,22 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <div class="container_registro">
+        <form class="form_registro">
+            <img src="logo.png" class="foto_registro" onclick="inicio()"></img>
+
+            <div class="input-container">
+                <input type="email" class="email_registro" placeholder="email">
+            </div>
+
+            <div class="input-container">
+                <input type="email" class="confirmar_email" placeholder="confirme o email">
+            </div>
+
+            <div class="input-container">
+                <input type="password" class="criar_senha" placeholder="senha" id = 'senha' spellcheck="true">
+                <span class="ver_senha_registro" onclick="mostrar()" id="senha">👁️</span>
+                <br>
+            </div>
+            
+            <button class="botao_registro" type="button" onclick=registro()>registrar</button>
+
+            <div class="links">
+                <a href="login.html" class="login"> login</a>
+            </div>
+        </form>
+    
     <script src="script.js"></script>
-
-    <img src="logo.png" class="foto_registro"></img>
-
-    <input type="email" class="email_registro" placeholder="  email">
-    <br>
-
-    <input type="email" class="confirmar_email" placeholder="  confirme o email">
-    <br>
-
-    <input type="password" class="criar_senha" placeholder="  senha" id = 'senha' spellcheck="true">
-    <span class="ver_senha_registro" onclick="mostrar()" id="senha">👁️</span>
-    <br>
-
-    <button class="botao_registro" type="button" onclick=registro()>registrar</button>
-    <a href="login.html" class="login"> login</a>
-
 </body>
 </html>

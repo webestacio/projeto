@@ -1,24 +1,68 @@
 body {
-   background-image:url(fundo.jpg);
-   background-size: cover;
-   text-align: center;
-   padding-top: 10%;
+  background: url(fundo.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 input {
-   height: 20px;
-   width: 200px;
-   border-radius: 15px;
-   margin-top: 5px;
-   padding: 5px;
+  width: 60%;
+  padding: 10px 40px 10px 15px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
 }
+
+.container_login  {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_registro{
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_recuperacao {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .ver_senha {
    cursor: pointer;
    user-select: none;
    position: absolute;
    transform: translateX(-25px);
-   margin-top: 10px;
+   margin-top: 7px;
 
 }
 
@@ -26,21 +70,38 @@ input {
    cursor: pointer;
    user-select: none;
    position: absolute;
-   margin-top: 167px;
-   margin-left: 70px;
+   margin-top: 8px;
+   margin-left: -30px;
 }
 
 button {
-   width: 120px;
-   height: 40px;
-   border-radius: 20px;
-   background-color: black;
-   color: white;
-   margin-top: 30px;
+  width: 40%;
+  padding: 12px;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botao_login {
+   justify-content: center;
+   width: 50%;
+}
+
+.botao_registro {
+   justify-content: center;
+   width: 50%;
+}
+
+.botao_recuperacao {
+   justify-content: center;
+   width: 50%;
 }
 
 button:hover {
-   transform: scale(1.06);
+   transform: scale(1.03);
    transition: 0.2s;
    cursor: pointer;
    
@@ -48,74 +109,60 @@ button:hover {
 
 .foto {
    width: 120px;
-   margin-bottom: 40px;
+   margin-bottom: 20px;
 }
 
-.foto_registro{
+.foto_registro {
    width: 120px;
-   margin-top: -40px;
-   margin-left: -60px;
-   position: absolute;
-}
-
-.foto_esqueci_senha {
-   width: 120px;
-   margin-top: -40px;
-   margin-left: -60px;
-   position: absolute;
+   margin-bottom: 20px;
    cursor: pointer;
 }
 
-a {
-   margin-top: -10px;
-   margin-left: -35px;
-   position: absolute;
-   color: white;
-}
-a.esqueci_senha {
-   margin-left: 77px;
+.foto_recuperacao  {
+   width: 120px;
+   margin-bottom: 20px;
+   cursor: pointer;
 }
 
-.email_registro {
-   position: absolute;
-   margin-top: 110px;
-   margin-left: -110px;
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.email_recuperacao {
+
+.form_registro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container {
   position: relative;
-  margin-top: 100px;
+  margin-top: 10px;
+  width: 350px;
 }
 
-.confirmar_email {
-   position: absolute;
-   margin-top: 135px;
-   margin-left: -110px;
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
-.botao_registro {
-   margin-top: 200px;
+.links a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
 }
 
-.botao_recuperacao {
-   position: absolute;
-   margin-top: 180px;
-   margin-left: -55px;
+.links a:hover {
+  text-decoration: underline;
 }
 
-.criar_senha {
-   position: absolute;
-   margin-top: 160px;
-   margin-left: -110px;
+a.inicio {
+   margin-left: 45%;
 }
 
-.login {
-   margin-top: 175px;
-   margin-left: -2px;
-}
 
-.inicio {
-   position: absolute;
-   margin-top: 3px;
-   margin-left: 60px;
-}

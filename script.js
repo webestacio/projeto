@@ -9,5 +9,5 @@ function mostrar() {
     }
 
 function inicio() {
-   window.location.href = "login.html";
+   window.location.href = "index.html";
 }

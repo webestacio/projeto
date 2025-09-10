@@ -20,7 +20,11 @@
             <div class="input-container">
                 <input type="email" class="confirmar_email" placeholder="confirme o email">
             </div>
-
+            
+            <div class="input-container">
+                <input type="text" class="cpf_registro" oninput="this.value = this.value.replace(/[^0-9]/g, '')"  inputmode="numeric" placeholder="cpf" maxlength="11">
+            </div>
+            
             <div class="input-container">
                 <input type="password" class="criar_senha" placeholder="senha" id = 'senha' spellcheck="true">
                 <span class="ver_senha_registro" onclick="mostrar()" id="senha">👁️</span>
@@ -30,7 +34,7 @@
             <button class="botao_registro" type="button" onclick=registro()>registrar</button>
 
             <div class="links">
-                <a href="login.html" class="login"> login</a>
+                <a href="index.html" class="login"> login</a>
             </div>
         </form>
     

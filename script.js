@@ -11,3 +11,8 @@ function mostrar() {
 function inicio() {
    window.location.href = "index.html";
 }
+
+function tela() {
+   window.location.href = "inicio.html";
+   
+}

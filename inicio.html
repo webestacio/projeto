@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="estilos/main.css">
+    <script src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="imagens/logo.png">
+</head>
+<body>
+
+    <header class="menu-navegacao">
+        <div class="foto_inicio">
+            <img src="imagens/logo.png" alt="logo avant" >
+        </div>
+        
+        <nav class="categorias">
+            <a href="#">masculino</a>
+            <a href="#">feminino</a>
+            <a href="#">ofertas</a>
+            <a href="#">infantil</a>
+        </nav>
+        
+        <div class="acoes">
+            <form class="Pesquisa" action="" method="get">
+              <input type="text" placeholder="Pesquisa" id="campo_buscar">
+            </form>
+            <i class='bx  bx-user'   onclick="funcao()"></i> 
+            <i class='bx  bx-cart'  onclick="funcao()"></i>
+            <i class='bx  bx-help-circle'  onclick="funcao()"></i> 
+            
+        </div>
+    </header>
+    <main class="conteudo">
+        <section class="produtos">
+            <h2>Melhores Ofertas 🔥</h2>
+
+            <div class="grade_produtos">
+                <article class="card_produtos">
+                    <img src="imagens/camisa1.jpg" alt="camisa zara">
+                    <h3>Camisa Zara </h3>
+                    <p class="preco_antigo"><del>R$ 159,99</del></p>
+                    <br>
+                    <p class="preco_novo">R$ 129,99</p>
+                    <br>
+                    <button class="add_carrinho" onclick="adicionarcarrinho('camisa zara')">adicionar</button>
+                </article>
+
+                <article class="card_produtos">
+                <img src="imagens/camisa2.jpg" alt="camisa azul zara">
+                <h3>camisa azul zara</h3>
+                <p class="preco_antigo"><del>R$ 179,99</del></p>
+                <br>
+                <p class="preco_novo">R$129,99</p>
+                <br>
+                <button class="add_carrinho" onclick="adicionarcarrinho('camisa azul zara')">adicionar</button>
+                </article>
+
+                <article class="card_produtos">
+                    <img src="imagens/short1.jpg" alt="short zara preto" >
+                    <h3>Short Zara preto</h3>
+                    <p class="preco_antigo"><del>R$ 149,99</del></p>
+                    <br>
+                    <p class="preco_novo">R$129,99</p>
+                    <br>
+                    <button class="add_carrinho" onclick="adicionarcarrinho('Short preto zara')">adicionar</button>
+                </article>
+
+                <article class="card_produtos">
+                    <img src="imagens/short2.jpg" alt="short zara jeans" >
+                    <h3>Short Jeans Zara</h3>
+                    <p class="preco_antigo"><del>R$129,99</del></p>
+                    <br>
+                    <p class="preco_novo">R$99,99</p>
+                    <br>
+                    <button class="add_carrinho" onclick="adicionarcarrinho('Short jeans zara')">adicionar</button>
+                </article>
+
+                <article class="card_produtos">
+                    <img src="imagens/casaco1.jpg" alt="casaco zara preto" >
+                    <h3>Casaco Zara preto</h3>
+                    <p class="preco_antigo"><del>R$239,99</del></p>
+                    <br>
+                    <p class="preco_novo">R$159,99</p>
+                    <br>
+                    <button class="add_carrinho" onclick="adicionarcarrinho('Casaco preto zara')">adicionar</button>
+                </article>
+            </div>
+        </section>
+</body>
+</html>

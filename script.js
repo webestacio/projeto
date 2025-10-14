@@ -20,3 +20,7 @@ function tela() {
 function perfil() {
    window.location.href = 'perfil.html'
 }
+
+function carrinho(){
+   window.location.href = 'carrinho.html'
+}

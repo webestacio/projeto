@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    background-color: rgb(204, 204, 204);
+    font-family: "BBH Sans Hegarty", sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* Cabeçalho */
+header {
+    margin-bottom: 2%;
+    margin-left: 4%;
+}
+header h2 {
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+header i {
+    font-size: 30px;
+}
+
+.voltar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+/* LAYOUT GERAL  */
+#conteudo {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px; 
+    padding: 20px 60px;
+    box-sizing: border-box;
+}
+
+/* ===== PERFIL LATERAL */
+#perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-lateral {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(120deg, rgb(0, 0, 0), rgb(46, 36, 51));
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.info-lateral img {
+    width: 80px;
+    height: 35%;
+    border-radius: 50%;
+}
+.icon-email {
+    display: flex;
+    align-items: center;
+}
+.icon-email i {
+    padding-right: 5px;
+}
+
+/* OPÇÕES PERFIL (painel esquerdo */
+.info-opcoes {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.info-opcoes a {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.info-opcoes i {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+/* INFO PESSOAL (painel direito) */
+.info-pessoal {
+    background-color: white;
+    width: 90%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* cabeçalho do painel */
+.nav-perfil span {
+    padding-left: 20px;
+    opacity: 0.4;
+}
+.nav-perfil h2 {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+.nav-perfil a {
+    background-color: rgb(139, 0, 0);
+    color: white;
+    text-decoration: none;
+    float: right;
+    width: 15%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.nav-perfil i {
+    padding-right: 10px;
+}
+.nav-perfil div {
+    display: flex;
+    justify-content: end;
+    margin-top: -37px;
+    margin-bottom: 25px;
+}
+.conteudo-perfil form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.conteudo-perfil input {
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid black;
+    width: 20%;
+    height: 30px;
+}
+
+.conteudo-perfil button {
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(200deg, rgb(0, 0, 0), rgb(53, 25, 67));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-size: 200%
+
+}
+
+.conteudo-perfil i {
+    font-size: 20px;
+}
+
+
+/* animaçoes */
+
+@keyframes brilho {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.conteudo-perfil button:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(
+    100deg,
+    #2e0049,
+    #000000,
+    #2e0049
+  );
+  animation: brilho 2s linear infinite;
+}
+
+.info-opcoes a:hover {
+   transform: scale(1.05);
+   transition: 0.3s ease-out;
+}
+
+.info-pessoal a:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-out;
+}
+
+.nav-perfil a:hover {
+    transform: scale(1.05);
+    background-color: rgb(229, 50, 50);
+    transition: 0.5s ease-in-out; 
+}
+
+
+
+
+@media (max-width: 900px) {
+    #conteudo {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .info-pessoal {
+        width: 100%;
+        max-width: 90%;
+    }
+
+
+    .nav-perfil a {
+        width: 50%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .nav-perfil div {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 30px;
+
+    }
+
+}

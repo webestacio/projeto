@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Carrinho</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos/carrinho.css">
+
+</head>
+<body>
+  <div class="voltar">
+    <a href="inicio.html"><i class='bx bx-arrow-back'></i> Continuar comprando</a>
+  </div>
+
+  <h1>Meu carrinho</h1>
+
+  <div id="conteiner">
+    <div class="lista">
+      <div class="item">
+        <img src="imagens/camisa3.jpg" alt="Blusa Manga Longa" />
+        <div class="info">
+          <h3>Blusa Manga Longa</h3>
+          Categoria: Superior<br />
+          Tamanho: G<br />
+          Cor: Branca e preta
+        </div>
+        <div class="preço">
+          R$ 1290,90 cada
+          <h3>R$ 1290,90 <i class='bx bx-trash'></i></h3>
+        </div>
+        <div class="quantidade">
+          <button class="menos" type="button">−</button>
+          <span class="numero">1</span>
+          <button class="mais" type="button">+</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="imagens/calca2.jpg" alt="Calça Moletom" />
+        <div class="info">
+          <h3>Calça Moletom</h3>
+          Categoria: Moletom<br />
+          Tamanho: M<br />
+          Cor: Bege
+        </div>
+        <div class="preço">
+          R$ 890,90 cada
+          <h3>R$ 890,90 <i class='bx bx-trash'></i></h3>
+        </div>
+        <div class="quantidade">
+          <button class="menos" type="button">−</button>
+          <span class="numero">1</span>
+          <button class="mais" type="button">+</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="imagens/camisa1.jpg" alt="Jaqueta Jeans" />
+        <div class="info">
+          <h3>Jaqueta Jeans</h3>          Categoria: Jaquetas<br />
+          Tamanho: GG<br />
+          Cor: Jeans
+        </div>
+        <div class="preço">
+          R$ 390,90 cada
+          <h3>R$ 390,90 <i class='bx bx-trash'></i></h3>
+        </div>
+        <div class="quantidade">
+          <button class="menos" type="button">−</button>
+          <span class="numero">1</span>
+          <button class="mais" type="button">+</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="imagens/casaco1.jpg" alt="Casaco Preto" />
+        <div class="info">
+          <h3>Casaco Preto</h3>
+          Categoria: Corta Vento<br />
+          Tamanho: P<br />
+          Cor: Preto
+        </div>
+        <div class="preço">
+          R$ 1290,90 cada
+          <h3>R$ 1290,90 <i class='bx bx-trash'></i></h3>
+        </div>
+        <div class="quantidade">
+          <button class="menos" type="button">−</button>
+          <span class="numero">1</span>
+          <button class="mais" type="button">+</button>
+        </div>
+      </div>
+    </div>
+
+    <main class="pedido">
+      <article id="aba-pedido">
+        <div class="resumo"><span>Resumo do pedido</span></div>
+        <div class="linha"><span>Subtotal (3 itens)</span><span>R$ 10.502,70</span></div>
+        <div class="linha"><span>Frete</span><span style="color:green;">Grátis</span></div>
+        <div class="linha total"><span>Total</span><span>R$ 10.502,70</span></div>
+        <button class="btn" type="button">Finalizar Compra</button>
+        <div class="extra">
+          ✔ Pagamento seguro<br />
+          ✔ Entrega rápida<br />
+          ✔ Garantia de 30 dias
+        </div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

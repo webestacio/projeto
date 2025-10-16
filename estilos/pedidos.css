@@ -97,108 +97,65 @@ header i {
     padding-left: 10px;
 }
 
-#opcao-perfil {
+#pedidos {
     background-color: rgb(0, 0, 0);
     color: white;
 }
 
-/* INFO PESSOAL (painel direito) */
-.info-pessoal {
+.status {
     background-color: white;
+    height: 90px;
     width: 90%;
+}
+#status-pedido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    margin-bottom: 30px ;
+    gap: 10px;
+
+}
+.status  {
+    padding-left: 10px;
     border-radius: 10px;
-    padding: 20px;
+    box-shadow: 1px 2px 5px;
+}
+.status i {
+    padding: 6px;
+    text-align: center;
+    border-radius: 10px;
 }
 
-/* cabeçalho do painel */
-.nav-perfil span {
-    padding-left: 20px;
-    opacity: 0.4;
+.status h1 {
+    font-size: 20px;
+    margin: 4px;
 }
-.nav-perfil h2 {
-    padding-left: 20px;
-    margin-bottom: 0;
+
+.opcoes {
+    display: flex;
+    gap: 20px;
+    padding-left: 3px;
 }
-.nav-perfil a {
+
+.opcoes a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+}
+
+.opcoes  a:hover{
     background-color: black;
     color: white;
-    text-decoration: none;
-    float: right;
-    width: 15%;
-    padding: 10px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-.nav-perfil i {
-    padding-right: 10px;
-}
-.nav-perfil div {
-    display: flex;
-    justify-content: end;
-    margin-top: -37px;
-    margin-bottom: 25px;
-}
-
-/* CARDS */
-.conteudo-perfil {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    gap: 25px 40px; 
-    width: 100%;
-    max-width: 900px;
-    margin: 20px auto;
-}
-.conteudo-perfil span {
-    opacity: 0.5;
+    transition: 0.3s ease-in-out;
 }
 
 
-.card {
-    background-color: rgba(239, 239, 239, 0.8);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    max-width: 50%;
-}
 
-.titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
-
-/* ===== ÍCONES ===== */
-.titulo i {
-    font-size: 26px;
-    color: white;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-/* Cores específicas */
-.nome i {
-    background-color: rgba(0, 128, 255, 0.8);
-}
-.Telefone i {
-    background-color: rgba(0, 253, 118, 0.8);
-}
-.endereço i {
-    background-color: rgba(151, 71, 255, 0.8);
-}
-.cidade i {
-    background-color: rgba(246, 134, 42, 0.8);
-}
-.cep i {
-    background-color: rgba(255, 35, 229, 0.8);
-}
 
 
 /* animaçoes e interaçoes */
@@ -206,11 +163,6 @@ header i {
 .info-opcoes a:hover {
    transform: scale(1.05);
    transition: 0.3s ease-out;
-}
-
-.info-pessoal a:hover {
-    transform: scale(1.05);
-    transition: 0.3s ease-out;
 }
 
 /* ===== RESPONSIVIDADE ===== */
@@ -222,33 +174,7 @@ header i {
         justify-content: center;
     }
 
-    .info-pessoal {
-        width: 100%;
-        max-width: 90%;
-    }
 
 
-    .conteudo-perfil {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-
-    .nav-perfil a {
-        width: 50%;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-    .nav-perfil div {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: 30px;
-
-    }
-
-    .card {
-        width: 50%;
-        max-width: 350px;
-    }
 }
 

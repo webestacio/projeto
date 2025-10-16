@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="estilos/pedidos.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="voltar">
+         <a href="inicio.html">
+            <i class='bxr  bx-arrow-left'  ></i> Continuar comprando
+        </a>
+        </div>
+
+        <h2>Meus Pedidos</h2>
+        <span>Acompanhe o status dos seus pedidos</span>
+    </header>
+    <main id="conteudo">
+        <article  id="perfil">
+            <aside class="info-lateral">
+                <img src="imagens/perfil.jpg">
+                <h2>(nome)</h2>
+                    <div class="icon-email">
+                        <i class='bx  bx-envelope'  ></i> 
+                        email@gmail.com
+                    </div>
+                
+            </aside>
+
+            <aside class="info-opcoes">
+                <a id="opcao-perfil" href="perfil.html">
+                    <i class='bxr  bx-user'  ></i>  perfil
+                </a>
+                <a  id="avaliacoes" href="#">
+                    <i class='bx  bx-star'  ></i> Ver minhas avaliaçoes
+                </a>
+                <a id="pedidos" href="pedidos.html">
+                    <i class='bx  bx-box-alt'  ></i> ver meus pedidos
+                </a>
+            </aside>
+        </article>
+        <article id="pedidos-container">
+            <section id="status-pedido">
+                <div class="status">
+                <i class='bxr  bx-clock-4'  ></i> 
+                <h1>1</h1>
+                <span>Pendentes</span>
+            </div>
+            <div class="status">
+               <i class='bxr  bx-box-alt'  ></i> 
+                <h1>1</h1>
+                <span>Processando</span>
+            </div>
+            <div class="status">
+                <i class='bxr  bx-truck'  ></i> 
+                <h1>1</h1>
+                <span>enviados</span>
+            </div>
+            <div class="status">
+                <i class='bxr  bx-check-circle'  ></i> 
+                <h1>1</h1>
+                <span>entregues</span>
+            </div>
+            </section>
+            
+            <div class="opcoes">
+                                <a href="#">
+                    todos
+                </a>
+                <a href="#">
+                    pendentes
+                </a>
+                <a href="#">
+                    Processando
+                </a>
+                <a href="#">
+                    enviados
+                </a>
+                <a href="#">
+                    entregues
+                </a>
+                
+            </div>
+
+            
+            
+            
+        </article>
+            
+    </main>
+    <script src="script.js"></script>   
+</body>
+</html>

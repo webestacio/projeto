@@ -102,11 +102,11 @@ header i {
     color: white;
 }
 
-.status {
-    background-color: white;
-    height: 90px;
-    width: 90%;
-}
+/* fim painel esquerdo */
+
+
+/* aba dos pedidos */
+
 #status-pedido {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
@@ -114,15 +114,21 @@ header i {
     gap: 10px;
 
 }
-.status  {
+.status {
+    background-color: white;
+    height: 100px;
+    width: 90%;
     padding-left: 10px;
     border-radius: 10px;
-    box-shadow: 1px 2px 5px;
+    box-shadow: 0.6px 0 4px;
 }
+
 .status i {
+    font-size: 20px;
     padding: 6px;
     text-align: center;
     border-radius: 10px;
+    margin-top: 5px;
 }
 
 .status h1 {
@@ -148,15 +154,81 @@ header i {
     font-size: 15px;
 }
 
-.opcoes  a:hover{
-    background-color: black;
-    color: white;
-    transition: 0.3s ease-in-out;
+.nav-pedido {
+    background-color: rgb(215, 215, 215);
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 90px;
 }
 
+.nav-pedido i {
+    padding-right: 10px;
+    font-size: 17px;
+}
 
+.nav-pedido span {
+    display: flex;
+    align-items: center;
+}
 
+.estado-pedido {
+    position: relative;
+    bottom: 44px;
+    display: flex;
+    justify-content: center;
+    left: 82%;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px;
+}
 
+.info-pedido {
+    background-color: white;
+    height: auto;
+    padding: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.info-pedido i {
+    padding-right: 10px;
+    font-size: 18px;
+}
+.info-pedido span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-pedido div {
+    display: flex;
+    margin-top: 20px;
+}
+
+.entregue,#entregue {
+    background-color: rgba(27, 239, 27, 0.49);
+
+}
+.enviado, #enviados {
+    background-color: rgba(110, 0, 110, 0.346);
+
+}
+
+.processando, #processando{
+    background-color: rgba(255, 166, 0, 0.532);
+
+}
+
+.pendente, #pendente {
+    background-color: aqua;
+}
 
 /* animaçoes e interaçoes */
 
@@ -165,16 +237,134 @@ header i {
    transition: 0.3s ease-out;
 }
 
+.opcoes  a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+
 /* ===== RESPONSIVIDADE ===== */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     #conteudo {
         grid-template-columns: 1fr;
         gap: 30px;
         padding: 20px;
-        justify-content: center;
     }
 
+    /* Perfil lateral */
+    #perfil {
+        align-items: center;
+    }
 
+    .info-lateral, .info-opcoes {
+        width: 100%;
+        max-width: 500px;
+    }
 
+    /* Status dos pedidos */
+    #status-pedido {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .status {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Filtros */
+    .opcoes {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .opcoes a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Cabeçalho do pedido */
+    .nav-pedido {
+        height: auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .nav-pedido h2 {
+        font-size: 18px;
+    }
+
+    .nav-pedido span {
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    /* Corrige posição do status (entregue, enviado, etc) */
+    .estado-pedido {
+        position: static;
+        width: auto;
+        align-self: flex-start;
+        margin-top: 5px;
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    /* Info do pedido */
+    .info-pedido {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .info-pedido div {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .info-pedido i {
+        font-size: 16px;
+    }
+
+    .info-pedido strong {
+        display: inline;
+    }
 }
+
+@media (max-width: 480px) {
+    header {
+        margin: 15px;
+    }
+
+    header h2 {
+        font-size: 28px;
+    }
+
+    .info-lateral img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .opcoes a {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .nav-pedido h2 {
+        font-size: 16px;
+    }
+
+    .info-pedido span {
+        font-size: 13px;
+    }
+}
+
 

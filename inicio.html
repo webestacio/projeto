@@ -12,8 +12,8 @@
 <body>
 
     <header class="menu-navegacao">
-        <div class="foto_inicio">
-            <img src="imagens/logo.png" alt="logo avant">
+        <div class="logo">
+            <h2>AVANT</h2>      
         </div>
         
         <nav class="categorias">
@@ -25,100 +25,115 @@
         
         <div class="acoes">
             <form class="Pesquisa" action="" method="get">
-              <input type="search" placeholder="Pesquisa" id="campo_buscar">
+              <input type="search" placeholder="Buscar Produtos..." id="campo_buscar">
             </form>
             <i class='bx  bx-user'   onclick="perfil()"></i> 
-            <i class='bx  bx-cart'  onclick="carrinho()"></i> 
+            <i class='bx  bx-cart'  onclick="carrinho()"></i>
+            <span>4</span> 
             
         </div>
     </header>
     <main class="conteudo">
-        <section class="produtos">
-            <h2>Melhores Ofertas 🔥</h2>
+        <section  class="Produtos">
+            <h2>Ofertas</h2>
 
-            <div class="grade_produtos">
-                <article class="card_produtos">
-                    <img src="imagens/camisa1.jpg" alt="camisa zara">
-                    <h3>Camisa Zara </h3>
-                    <p class="preco_antigo"><del>R$ 159,99</del></p>
-                    <br>
-                    <p class="preco_novo">R$ 129,99</p>
-                    <br>
-                    <button class="add_carrinho" onclick="adicionarcarrinho('camisa zara')">adicionar</button>
-                </article>
+                <div  class="grade-produtos">
+                    
+                    <article class="card_produtos">
+                        <img src="imagens/camisa1.jpg" alt="camisa zara">
+                        <h3>Camisa Zara </h3>
+                        <p>Masculino</p>
+                        <span class="preco_antigo"><del>R$ 159,99</del></span> <span class=" preco_novo">R$ 129,99</span><p></p>
+                        <br>
+                        <button class="add_carrinho" onclick="adicionarcarrinho('camisa zara')">adicionar
+                            <i class='bx  bx-cart'  onclick="carrinho()"></i>
+                        </button> 
+                    </article>
+                    
+                    <article class="card_produtos">
+                        <img src="imagens/camisa2.jpg" alt="camisa zara">
+                        <h3>Camisa Zara </h3>
+                        <p>Masculino</p>
+                        <span class="preco_antigo"><del>R$ 159,99</del></span> <span class=" preco_novo">R$ 129,99</span><p></p>
+                        <br>
+                        <button class="add_carrinho" onclick="adicionarcarrinho('camisa zara')">adicionar
+                            <i class='bx  bx-cart'  onclick="carrinho()"></i>
+                        </button> 
+                    </article>
+                    
+                    <article class="card_produtos">
+                        <img src="imagens/short1.jpg" alt="camisa zara">
+                        <h3>Camisa Zara </h3>
+                        <p>Masculino</p>
+                        <span class="preco_antigo"><del>R$ 159,99</del></span> <span class=" preco_novo">R$ 129,99</span><p></p>
+                        <br>
+                        <button class="add_carrinho" onclick="adicionarcarrinho('camisa zara')">adicionar
+                            <i class='bx  bx-cart'  onclick="carrinho()"></i>
+                        </button> 
+                    </article>
+                    
+                    <article class="card_produtos">
+                        <img src="imagens/short2.jpg" alt="camisa zara">
+                        <h3>Camisa Zara </h3>
+                        <p></p>Masculino</p>
+                        <span class="preco_antigo"><del>R$ 159,99</del></span> <span class=" preco_novo">R$ 129,99</span><p></p>
+                        <br>
+                        <button class="add_carrinho" onclick="adicionarcarrinho('camisa zara')">adicionar
+                            <i class='bx  bx-cart'  onclick="carrinho()"></i>
+                        </button> 
+                    </article>
+                    
+                    <article class="card_produtos">
+                        <img src="imagens/casaco1.jpg" alt="camisa zara">
+                        <h3>Camisa Zara </h3>
+                        <p>Masculino</p>
+                        <span class="preco_antigo"><del>R$ 159,99</del></span> <span class=" preco_novo">R$ 129,99</span><p></p>
+                        <br>
+                        <button class="add_carrinho" onclick="adicionarcarrinho('camisa zara')">adicionar
+                            <i class='bx  bx-cart'  onclick="carrinho()"></i>
+                        </button> 
+                    </article>
+                    
+                    <article class="card_produtos">
+                        <img src="imagens/short2.jpg" alt="camisa zara">
+                        <h3>Camisa Zara </h3>
+                        <p>Masculino</p>
+                        <span class="preco_antigo"><del>R$ 159,99</del></span> <span class=" preco_novo">R$ 129,99</span><p></p>
+                        <br>
+                        <button class="add_carrinho" onclick="adicionarcarrinho('camisa zara')">adicionar
+                            <i class='bx  bx-cart'  onclick="carrinho()"></i>
+                        </button> 
+                    </article>
+                    
+                    <article class="card_produtos">
+                        <img src="imagens/calca1.jpg" alt="camisa zara">
+                        <h3>Camisa Zara </h3>
+                        <p>Masculino</p>
+                        <span class="preco_antigo"><del>R$ 159,99</del></span> <span class=" preco_novo">R$ 129,99</span><p></p>
+                        <br>
+                        <button class="add_carrinho" onclick="adicionarcarrinho('camisa zara')">adicionar
+                            <i class='bx  bx-cart'  onclick="carrinho()"></i>
+                        </button> 
+                    </article>
+                    
+                    <article class="card_produtos">
+                        <img src="imagens/calca2.jpg" alt="camisa zara">
+                        <h3>Camisa Zara </h3>
+                        <p>Masculino</p>
+                        <span class="preco_antigo"><del>R$ 159,99</del></span> <span class=" preco_novo">R$ 129,99</span><p></p>
+                        <br>
+                        <button class="add_carrinho" onclick="adicionarcarrinho('camisa zara')">adicionar
+                            <i class='bx  bx-cart'  onclick="carrinho()"></i>
+                        </button> 
+                    </article>
 
-                <article class="card_produtos">
-                <img src="imagens/camisa2.jpg" alt="camisa azul zara">
-                <h3>camisa azul zara</h3>
-                <p class="preco_antigo"><del>R$ 179,99</del></p>
-                <br>
-                <p class="preco_novo">R$129,99</p>
-                <br>
-                <button class="add_carrinho" onclick="adicionarcarrinho('camisa azul zara')">adicionar</button>
-                </article>
-
-                <article class="card_produtos">
-                    <img src="imagens/short1.jpg" alt="short zara preto" >
-                    <h3>Short Zara preto</h3>
-                    <p class="preco_antigo"><del>R$ 149,99</del></p>
-                    <br>
-                    <p class="preco_novo">R$129,99</p>
-                    <br>
-                    <button class="add_carrinho" onclick="adicionarcarrinho('Short preto zara')">adicionar</button>
-                </article>
-
-                <article class="card_produtos">
-                    <img src="imagens/short2.jpg" alt="short zara jeans" >
-                    <h3>Short Jeans Zara</h3>
-                    <p class="preco_antigo"><del>R$129,99</del></p>
-                    <br>
-                    <p class="preco_novo">R$99,99</p>
-                    <br>
-                    <button class="add_carrinho" onclick="adicionarcarrinho('Short jeans zara')">adicionar</button>
-                </article>
-
-                <article class="card_produtos">
-                    <img src="imagens/casaco1.jpg" alt="casaco zara preto" >
-                    <h3>Casaco Zara preto</h3>
-                    <p class="preco_antigo"><del>R$239,99</del></p>
-                    <br>
-                    <p class="preco_novo">R$159,99</p>
-                    <br>
-                    <button class="add_carrinho" onclick="adicionarcarrinho('Casaco preto zara')">adicionar</button>
-                </article>
-
-                <article class="card_produtos">
-                    <img src="imagens/camisa3.jpg" alt="casaco retro zara" >
-                    <h3>Casaco Retro Zara</h3>
-                    <p class="preco_antigo"><del>R$219,99</del></p>
-                    <br>
-                    <p class="preco_novo">R$129,99</p>
-                    <br>
-                    <button class="add_carrinho" onclick="adicionarcarrinho('Casaco Retro zara')">adicionar</button>
-                </article>
-
-                <article class="card_produtos">
-                    <img src="imagens/calca1.jpg" alt="calça preta zara">
-                    <h3>Calça preta zara</h3>
-                    <p class="preco_antigo"><del>R$219,99</del></p>
-                    <br>
-                    <p class="preco_novo">R$119,99</p>
-                    <br>
-                    <button class="add_carrinho" onclick="adicionarcarrinho('calça preta zara')">adicionar</button>
-                </article>
-
-                <article class="card_produtos">
-                    <img src="imagens/calca2.jpg" alt="calça branca zara">
-                    <h3>Calça branca zara</h3>
-                    <p class="preco_antigo"><del>R$209,99</del></p>
-                    <br>
-                    <p class="preco_novo">R$109,99</p>
-                    <br>
-                    <button class="add_carrinho" onclick="adicionarcarrinho('calça branca zara')">adicionar</button>
-                </article>
-                
-
-            </div>
+                   
+                </div>
         </section>
+    </main>
+    <footer class="cabecalho">
+        <h2>fique por dentro</h2>
+    </footer>
+
 </body>
 </html>

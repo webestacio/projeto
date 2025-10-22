@@ -176,6 +176,9 @@ footer h3 {
         flex: 1;
         justify-content: flex-end; 
     }
+    .categorias {
+        gap: 20px;
+    }
 
 }
 

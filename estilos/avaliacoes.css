@@ -1,216 +1,349 @@
-    :root {
-      --bg: rgb(234, 231, 226);
-      --primary: #0056b3;
-      --accent: rgb(197, 123, 12);
-    }
+:root {
+  --bg: rgb(204,204,204);
+  --primary: #0056b3;
+  --accent: rgb(197, 123, 12);
+}
 
-    body {
-      font-family: "Times New Roman", serif;
-      background-color: var(--bg);
-      margin: 0;
-      padding: 0;
-    }
+body {
+    margin: 0;
+    background-color: rgb(204, 204, 204);
+    font-family: "BBH Sans Hegarty", sans-serif;
+    box-sizing: border-box;
 
-    .voltar a { color: rgb(6, 6, 6); text-decoration: none; }
-    .voltar a:hover { color: rgb(103, 115, 116); }
-    .voltar { padding: 10px; margin: 10px; font-size: 20px; }
+}
 
-    h1 { padding-left: 50px; }
+/* Cabeçalho */
+header {
+    margin-bottom: 2%;
+    margin-left: 4%;
+}
+header h2 {
+    margin-bottom: 0;
+    font-size: 40px;
+}
 
-    /* Container principal */
-    #conteiner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      gap: 40px;
-    }
+header i {
+    font-size: 30px;
+}
 
-    /* Blocos principais */
-    .lista-numero {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: start;
-      gap: 10px;
-      width: 95%;
-      flex-wrap: wrap;
-      padding: 0 auto;
-      box-sizing: border-box;
-    }
+.voltar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
 
-    .lista-numero h3 {
-      font-size: 25px;
-      color: white;
-      background-color: rgb(56, 70, 151);
-      width: 30px;
-      padding: 10px;
-      text-align: center;
-      border-radius: 8px;
-      margin-top: -1px;
-    }
+  /* Container principal */
 
-    .total-avaliacao,
-    .media-notas,
-    .caixa-recomendacao {
-      background-color: rgb(251, 250, 250);
-      padding: 15px;
-      width: 280px;
-      height: 130px;
-      border-radius: 8px;
-      text-align: left;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box;
-    }
+#conteiner {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px; 
+  padding: 20px 60px;
+   box-sizing: border-box;
 
-    #total h4, #media h4, #recomendacao h4 {
-      font-weight: bold;
-      font-size: 17px;
-      margin: 0 auto;
-      flex-wrap: nowrap;
-    }
+}
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
 
-    #realizadas, #nota-media, #produtos-recomendados {
-      font-size: 11px;
-      color: gray;
-      margin-left: 0 auto;
-    }
+}
 
-    /* Lista de produtos em coluna */
-    .lista-produtos {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 90%;
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 0 16px 24px;
-      box-sizing: border-box;
-    }
+#perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    /* Cada produto */
-    .produto {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      gap: 16px;
-      background: #f7f7f7;
-      border-radius: 10px;
-      padding: 14px;
-      width: 100%;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-      box-sizing: border-box;
-    }
+.info-lateral {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: linear-gradient(120deg, rgb(0, 0, 0), rgb(46, 36, 51));
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.info-lateral img {
+  width: 80px;
+  height: 35%;
+  border-radius: 50%;
+}
 
-    .info {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      flex: 1 1 auto;
-      min-width: 280px;
-    }
+.icon-email {
+    display: flex;
+    align-items: center;
+}
+.icon-email i {
+    padding-right: 5px;
+}
 
-    .info img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin: 0;
-      flex-shrink: 0;
-    }
+/* OPÇÕES PERFIL (painel esquerdo */
+.info-opcoes {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.info-opcoes a {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.info-opcoes i {
+    padding-right: 20px;
+    padding-left: 10px;
+}
 
-    #descricao {
-      padding-left: 8px;
-      padding-bottom: 8px;
-      font-weight: bold;
-      font-size: 17px;
-    }
+#avaliacao {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
 
-    /* Estrelas */
-    .avaliacao {
-      font-size: 28px;
-      cursor: default;
-      margin-left: auto;
-      align-self: center;
-    }
-    .estrela { color: #ccc; transition: color 0.2s; }
-    .estrela:hover { color: orange; }
-    .estrela.selecionada { color: gold; }
 
-    /* Comentário */
-    .comentarios {
-      width: 100%;
-      box-sizing: border-box;
-    }
-    .comentarios textarea {
-      width: 100%;
-      min-height: 120px;
-      padding: 10px 12px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 15px;
-      resize: none;
-      line-height: 1.4;
-      box-sizing: border-box;
-    }
-    .comentarios textarea::placeholder { text-align: left; }
-    .comentarios textarea { height: 150px; }
+/* Blocos principais */
+.lista-numero {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  width: 95%;
+  flex-wrap: wrap;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
 
-    /* ================== Responsivo ================== */
-    @media (max-width: 1024px) {
-      h1 { padding-left: 25px; font-size: 28px; }
-      .total-avaliacao, .media-notas, .caixa-recomendacao { 
-        width:150px;
-        height: 160px;
-      }
-    }
+.lista-numero h3 {
+  font-size: 25px;
+  color: white;
+  background-color: rgb(56, 70, 151);
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: -1px;
+}
 
-    @media (max-width: 900px) {
-      .lista-produtos { width: 100%; }
-      .avaliacao {
-        order: 2;
-        margin-left: 0;
-        justify-content: center;
-      }
-      .info img {
-        width: 220px;
-        height: auto;
-      }
-    }
+.total-avaliacao,.media-notas,.caixa-recomendacao {
+  background-color: rgb(251, 250, 250);
+  padding: 15px;
+  width: 280px;
+  height: 130px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
 
-    @media (max-width: 600px) {
-      #conteiner { width: 100%; }
-      #total , #media ,#recomendacao{
-        display: block;
-        justify-content: left;
-      }
-      .total-avaliacao, .media-notas, .caixa-recomendacao {
-        width: 30%;
-      }
-      .info {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-      }
-      .info img {
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-      }
-      #descricao { padding-left: 0; font-size: 16px; }
-      .avaliacao {
-        display: flex;
-        justify-content: center;
-        font-size: 28px;
-        margin-left: 0;
-      }
-      .comentarios textarea { width: 100%; }
-    }
+#total h4, #media h4, #recomendacao h4 {
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
 
-    @media (max-width: 400px) {
-      h1 { padding-left: 16px; font-size: 24px; }
-      .produto { padding: 12px; }
+#realizadas, #nota-media, #produtos-recomendados {
+  font-size: 11px;
+  color: gray;
+  margin-left: 0 auto;
+}
+
+/* Lista de produtos em coluna */
+ .lista-produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px 24px;
+  box-sizing: border-box;
+}
+
+/* Cada produto */
+.produto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 14px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 1 auto;
+  min-width: 280px;
+}
+
+.info img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+#descricao {
+  padding-left: 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* Estrelas */
+.avaliacao {
+  font-size: 28px;
+  cursor: default;
+  margin-left: auto;
+  align-self: center;
+}
+.estrela {
+  color: #ccc;
+  transition: color 0.2s;
+}
+.estrela:hover {
+  color: orange; 
+}
+.estrela.selecionada {
+  color: gold;
+}
+
+/* Comentário */
+.comentarios {
+  width: 100%;
+  box-sizing: border-box;
+}
+.comentarios textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  resize: none;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+.comentarios textarea::placeholder {
+  text-align: left;
+}
+.comentarios textarea {
+  height: 150px;
+}
+
+/* ================== Responsivo ================== */
+@media (max-width: 1024px) {
+  h1 {
+  padding-left: 25px;
+  font-size: 28px; 
+}
+.total-avaliacao, .media-notas, .caixa-recomendacao { 
+  width:  250px;
+  height: 160px;
+}
+}
+
+@media (max-width: 900px) {
+
+  #conteiner{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+.lista-produtos {
+  width: 100%; 
+}
+
+}
+.total-avaliacao, .media-notas, .caixa-recomendacao { 
+  width:  250px;
+  height: 160px;
+}
+
+.avaliacao {
+  order: 2;
+  margin-left: 0;
+  justify-content: center;
+}
+.info img {
+  width: 220px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+
+#conteiner {
+  width: 100%;
+}
+
+#total , #media ,#recomendacao{
+  display: block;
+  justify-content: left;
+}
+
+.total-avaliacao, .media-notas, .caixa-recomendacao {
+  width: 250px;
+}
+.info {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.info img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+#descricao {
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.avaliacao {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  margin-left: 0;
+
+}
+
+.comentarios textarea {
+  width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+
+h1 {
+  padding-left: 16px;
+  font-size: 24px;
+}
+
+  .produto { padding: 12px; }
     }
 
     /* Botão Nova Avaliação */

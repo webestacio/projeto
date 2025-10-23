@@ -4,106 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Avaliações</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="estilos/avaliacoes.css">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="estilos/avaliacoes.css" />
 </head>
 
 <body>
-  <div class="voltar">
-    <a href="inicio.html"><i class='bx bx-arrow-back'></i> Continuar comprando</a>
-  </div>
+  <header>
+      <div class="voltar">
+         <a href="inicio.html">
+            <i class='bxr  bx-arrow-left'  ></i> Continuar comprando
+          </a>
+      </div>
 
-  <h1>Avaliações pedidos</h1>
+    <h2>Minhas Avaliações</h2> 
+    <span>Visualize e gerencie suas avaliações de pedidos</span>
+  </header>
   <button class="nova-avaliacao">+ Nova avaliação</button>
 
   <div id="conteiner">
-    <div class="lista-numero">
-      <div class="total-avaliacao">
-        <h3>3</h3>
-        <div id="total">
-          <h4>Total de Avaliações</h4>
+
+    <article id="perfil">
+      <aside class="info-lateral">
+        <img src="imagens/perfil.jpg" alt="Foto de perfil">
+        <h2>(nome)</h2>
+        <div class="icon-email">
+          <i class='bx bx-envelope'></i> email@gmail.com
         </div>
-        <div id="realizadas">avaliações realizadas</div>
+      </aside>
+
+      <aside class="info-opcoes">
+        <a id="opcao-perfil" href="perfil.html">
+          <i class='bx bx-user'></i> perfil
+        </a>
+        <a id="avaliacao" href="avaliacoes.html">
+          <i class='bx bx-star'></i> Ver minhas avaliações
+        </a>
+        <a id="pedidos" href="pedidos.html">
+          <i class='bx bx-box-alt'></i> ver meus pedidos
+        </a>
+      </aside>
+    </article>
+
+    <div class="conteudo-principal">
+      
+      <div class="lista-numero">
+        <div class="total-avaliacao">
+          <h3>3</h3>
+          <div id="total">
+            <h4>Total de Avaliações</h4>
+          </div>
+          <div id="realizadas">avaliações realizadas</div>
+        </div>
+
+        <div class="media-notas">
+          <h3>4.5</h3>
+          <div id="media">
+            <h4>Média de notas</h4>
+          </div>
+          <div id="nota-media">De 5 estrelas</div>
+        </div>
+
+        <div class="caixa-recomendacao">
+          <h3>5</h3>
+          <div id="recomendacao">
+            <h4>Recomendações de clientes</h4>
+          </div>
+          <div id="produtos-recomendados">produtos recomendados</div>
+        </div>
       </div>
 
-      <div class="media-notas">
-        <h3>4.5</h3>
-        <div id="media">
-          <h4>Média de notas</h4>
+      <section class="lista-produtos">
+        <div class="produto">
+          <div class="info">
+            <img src="imagens/camisa3.jpg" alt="Blusa Manga Longa">
+            <div id="descricao">
+              <h3>Blusa Manga Longa</h3>
+              Categoria: Blusa / Tamanho: M / Cor: Branco e Preto
+              <div class="avaliacao">
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9734;</span>
+              </div>
+            </div>
+          </div>
+          <article class="comentarios">
+            <textarea placeholder="Escreva seu comentário..."></textarea>
+          </article>
         </div>
-        <div id="nota-media">De 5 estrelas</div>
-      </div>
 
-      <div class="caixa-recomendacao">
-        <h3>5</h3>
-        <div id="recomendacao">
-          <h4>Recomendações de clientes</h4>
+        <div class="produto">
+          <div class="info">
+            <img src="imagens/calca2.jpg" alt="Calça moletom">
+            <div id="descricao">
+              <h3>Calça Moletom</h3>
+              Categoria: Calça / Tamanho: G / Cor: Bege
+              <div class="avaliacao">
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9734;</span>
+              </div>
+            </div>
+          </div>
+          <article class="comentarios">
+            <textarea placeholder="Escreva seu comentário..."></textarea>
+          </article>
         </div>
-        <div id="produtos-recomendados">produtos recomendados</div>
-      </div>
+
+        <div class="produto">
+          <div class="info">
+            <img src="imagens/camisa1.jpg" alt="Jaqueta Jeans">
+            <div id="descricao">
+              <h3>Jaqueta</h3>
+              Categoria: Jeans / Tamanho: P / Cor: Jeans
+              <div class="avaliacao">
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9733;</span>
+                <span class="estrela">&#9734;</span>
+              </div>
+            </div>
+          </div>
+          <article class="comentarios">
+            <textarea placeholder="Escreva seu comentário..."></textarea>
+          </article>
+        </div>
+      </section>
     </div>
-  
-    <section class="lista-produtos">
-      <div class="produto">
-        <div class="info">
-          <img src="imagens/camisa3.jpg" alt="Blusa Manga Longa">
-          <div id="descricao">
-            <h3>Blusa Manga Longa</h3>
-            Categoria: Blusa / Tamanho: M / Cor: Branco e Preto
-            <div class="avaliacao">
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9734;</span>
-            </div>
-          </div>
-        </div>
-        <article class="comentarios">
-          <textarea placeholder="Escreva seu comentário..."></textarea>
-        </article>
-      </div>
-
-      <div class="produto">
-        <div class="info">
-          <img src="imagens/calca2.jpg" alt="Calça moletom">
-          <div id="descricao">
-            <h3>Calça Moletom</h3>
-            Categoria: Calça / Tamanho: G / Cor: Bege
-            <div class="avaliacao">
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9734;</span>
-            </div>
-          </div>
-        </div>
-        <article class="comentarios">
-          <textarea placeholder="Escreva seu comentário..."></textarea>
-        </article>
-      </div>
-
-      <div class="produto">
-        <div class="info">
-          <img src="imagens/camisa1.jpg" alt="Jaqueta Jeans">
-          <div id="descricao">
-            <h3>Jaqueta</h3>
-            Categoria: Jeans / Tamanho: P / Cor: Jeans
-            <div class="avaliacao">
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9733;</span>
-              <span class="estrela">&#9734;</span>
-            </div>
-          </div>
-        </div>
-        <article class="comentarios">
-          <textarea placeholder="Escreva seu comentário..."></textarea>
-        </article>
-      </div>
-    </section>
   </div>
 </body>
 </html>

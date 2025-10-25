@@ -1,3 +1,4 @@
+
 body, html {
     margin:0;
     padding:0;
@@ -41,6 +42,7 @@ body, html {
     text-align: center;
     right: 35px;
     bottom: 10px;
+    cursor: pointer;
 }
 .acoes input {
     background: transparent;
@@ -48,6 +50,7 @@ body, html {
     padding: 10px;
     font-size: 15px;
     border-radius: 10px;
+    color: white;
 }
 
 .categorias a {
@@ -80,12 +83,15 @@ body, html {
     gap: 30px;
     color: white;
     justify-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .card_produtos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: start;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -100,6 +106,11 @@ body, html {
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.card_produtos h3 {
+    font-size: 16px;
+    flex-wrap: wrap;
 }
 
 .card_produtos p  {
@@ -179,6 +190,10 @@ footer h3 {
     .categorias {
         gap: 20px;
     }
+    .grade-produtos {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
 }
 
@@ -186,6 +201,10 @@ footer h3 {
 @media (max-width: 400px) {
   .grade-produtos {
     grid-template-columns: 1fr; 
+  }
+
+  .grade-produtos span,.grade-produtos h3 {
+    margin-left: 5%;
   }
 
   .card_produtos img {
